@@ -75,7 +75,7 @@ def add():
     movie_title = form.movie_title.data
 
     params = {
-        'api_key': 'f2f0061bf03b5d7e9a7226bd037a5dea',
+        'api_key': 'api key',
         'query': movie_title,
     }
 
@@ -91,7 +91,7 @@ def details():
     movie_id = request.args.get('movie_id')
     movie_details_url = f'https://api.themoviedb.org/3/movie/{movie_id}'
     params = {
-        'api_key': 'f2f0061bf03b5d7e9a7226bd037a5dea',
+        'api_key': 'api key',
         'movie_id': movie_id,
     }
     response = requests.get(movie_details_url, params=params)
